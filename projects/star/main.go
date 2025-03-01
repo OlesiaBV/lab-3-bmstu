@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var input string
+
+	fmt.Println("Введите строку: ")
+	fmt.Scan(&input)
+
+	result := strings.Join(strings.Split(input, ""), "*")
+
+	fmt.Println("Результат: ", result)
 }
